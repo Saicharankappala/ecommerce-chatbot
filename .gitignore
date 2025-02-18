@@ -26,3 +26,20 @@ node_modules/
 .env
 .DS_Store
 package-lock.json
+
+# Ignore environment files
+.env
+backend/.env
+frontend/.env
+# Ignore environment files
+.env
+backend/.env
+frontend/.env
+
+# Ignore dependencies
+node_modules/
+
+# Ignore build files
+/build
+
+.lh/
