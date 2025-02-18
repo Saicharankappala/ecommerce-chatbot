@@ -1,0 +1,19 @@
+name: Deploy Frontend to Vercel
+
+on:
+  push:
+    branches:
+      - main  # Runs when we push to the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Uses a virtual machine to run the deployment
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3  # Get the latest code
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel  # Install the Vercel command-line tool
+
+      - name: Deploy to Vercel
+        run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }}  # Deploy to Vercel

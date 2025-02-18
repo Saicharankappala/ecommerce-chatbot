@@ -1,0 +1,16 @@
+name: Deploy Backend to Render
+
+on:
+  push:
+    branches:
+      - main  # Runs when we push to the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Uses a virtual machine to run the deployment
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3  # Get the latest code
+
+      - name: Deploy to Render
+        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}  # Tells Render to deploy
