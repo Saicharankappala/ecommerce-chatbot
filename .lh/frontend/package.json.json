@@ -1,0 +1,18 @@
+{
+    "sourceFile": "frontend/package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1739861780654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1739861780654,
+            "name": "Commit-0",
+            "content": "{\n  \"name\": \"frontend\",\n  \"version\": \"1.0.0\",\n  \"main\": \"postcss.config.js\",\n  \"scripts\": {\n    \"start\": \"react-scripts start\",\n  \"build\": \"react-scripts build\",\n  \"test\": \"react-scripts test\",\n  \"eject\": \"react-scripts eject\"\n\n  },\n  \"keywords\": [],\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"description\": \"\",\n  \"devDependencies\": {\n    \"autoprefixer\": \"^10.4.20\",\n    \"postcss\": \"^8.5.2\",\n    \"tailwindcss\": \"^4.0.6\"\n  }\n}\n"
+        }
+    ]
+}
